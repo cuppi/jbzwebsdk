@@ -15,6 +15,7 @@ class JNetworkConfig {
     NetworkManager.baseUrl = config.baseUrl;
     NetworkManager.delegate = {...defaultInterceptor, ...config.delegate};
     NetworkManager.carryData = config.carryData;
+    NetworkManager.axiosConfig = config.axiosConfig;
     let {urlMap, dataMap} = config;
     if (!urlMap || !dataMap){
       console.log('Didn\'t find out the urlMap value or dataMap, do you forget it?')

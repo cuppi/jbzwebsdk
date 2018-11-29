@@ -104,13 +104,8 @@ var JNetwork = function () {
                     'Content-Type': 'application/x-www-form-urlencoded'
                     // 'Content-Type': 'application/json'
                 }, headers);
-                var jaxios = axios_1.default.create({
-                    method: method,
-                    timeout: otherObject ? otherObject.timeout : JNetwork.timeout,
-                    params: parameters,
-                    baseURL: baseUrl,
-                    headers: iHeaders
-                });
+                var axiosConfig = JNetwork.axiosConfig ? JNetwork.axiosConfig : {};
+                var jaxios = axios_1.default.create((0, _assign2.default)({ method: method, timeout: otherObject ? otherObject.timeout : JNetwork.timeout, params: parameters, baseURL: baseUrl, headers: iHeaders }, axiosConfig));
                 jaxios.interceptors.request.use(function (config) {
                     var otherParas = {};
                     _this.otherParas.forEach(function (key) {
@@ -431,6 +426,7 @@ JNetwork.inType = '';
 JNetwork.baseUrl = '';
 JNetwork.delegate = null;
 JNetwork.carryData = {};
+JNetwork.axiosConfig = {};
 JNetwork.timeout = 10 * 1000;
 exports.default = JNetwork;
 //# sourceMappingURL=JNetwork.js.map

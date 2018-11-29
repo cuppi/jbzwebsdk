@@ -14,6 +14,8 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 Object.defineProperty(exports, "__esModule", { value: true });
+// import UrlRefex from 'url-regex';
+// import UrlPattern from 'url-pattern';
 /**
  * 网络地址工具类
  * @memberOf module:tool
