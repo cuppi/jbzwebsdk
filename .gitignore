@@ -73,4 +73,3 @@ typings/
 
 # Serverless directories
 .serverless
-publish.js
