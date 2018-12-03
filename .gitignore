@@ -69,4 +69,3 @@ typings/
 
 package-lock.json
 dist/
-publish.js
