@@ -69,4 +69,3 @@ typings/
 .env
 
 package-lock.json
-publish.js
