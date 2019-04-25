@@ -513,8 +513,8 @@ class SeatManager {
     return seatList.map((seatModel) => {
       let row = Number.parseInt(seatModel.rowNo);
       let col = Number.parseInt(seatModel.columnNo);
-      let rowOriNumber = StringTool.numberRemoveLeftZero(seatModel.rowName);
-      let colOriNumber = StringTool.numberRemoveLeftZero(seatModel.columnName);
+      let rowOriNumber = StringTool.numberRemoveLeftZero(seatModel.rowId);
+      let colOriNumber = StringTool.numberRemoveLeftZero(seatModel.columnId);
       let rowNumber = StringTool.numberFromString(seatModel.rowId, true, 1);
       let colNumber = StringTool.numberFromString(seatModel.columnId, true, 1);
       return {

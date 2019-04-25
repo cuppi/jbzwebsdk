@@ -227,7 +227,7 @@ class TradeManager {
           rowId: seat.seatModel.rowId,
           seatNo: seat.seatModel.seatNo
         });
-        seatNumberInfos.push(seat.rowNumber + ':' + seat.colNumber);
+        seatNumberInfos.push(seat.seatModel.rowId + ':' + seat.seatModel.columnId);
       }
       return {
         seatIds: JSON.stringify({
