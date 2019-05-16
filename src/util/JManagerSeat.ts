@@ -13,7 +13,6 @@ const _cellColSpace = 8;
 
 
 let instance = null;
-console.log('aa')
 /**
  * 座位图管理类
  * @module manager
